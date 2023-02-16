@@ -64,12 +64,13 @@ button:hover{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 2s, opacity 2s linear;
+
 .message{
     max-height:100%;
 }
 
 .close-message-btn{
-    margin-left:10px
+    margin-left:10px;
 }
 .close-message-btn:hover{
     cursor:pointer;
