@@ -1,3 +1,76 @@
 body {
     padding-top: 5rem;
 }
+.form-container form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.form-desc{
+    margin-bottom:30px;
+}
+button{
+    height:35px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius:7px;
+    border:none;
+}
+button:hover{
+    opacity:0.4;
+}
+.send-btn{
+    background:teal;
+    color:white;
+    width:100px;
+}
+
+.field-box{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+}
+.field-box input{
+    width:300px;
+}
+.field-box textarea{
+    width:500px;
+    height:120px;
+    resize:none;
+}
+.form-container .field-title{
+    font-weight:500;
+}
+.required-txt{
+    font-weight:500;
+    color:red;
+}
+.flashes{
+    visibility:visible;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:lime;
+    color:white;
+    list-style-type: none;
+    border: 1px solid lime;
+    height: 50px;
+    width:320px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.fadeOut{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+.message{
+    max-height:100%;
+}
+
+.close-message-btn{
+    margin-left:10px
+}
+.close-message-btn:hover{
+    cursor:pointer;
+}
